@@ -21,13 +21,13 @@ we have realsed our pre-trained PIS models and related materials:
 1. Pretrain with ResNet-50 backbone.
 
 ```bash
-OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0,1,2,3,4,5' python pretrain.py --arch resnet50 --bs 128 --lr 0.3 --epoch 30 --data SSL4EO_RGB_MIX --num_patch 16 --tcr 1 --patch_sim 400
+OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0,1,2,3,4,5' python pretrain.py --arch resnet50 --bs 128 --lr 0.3 --epoch 30 --data SSL4EO_RGB_MIX --num_var 16 --tcr 1 --var_sim 400
 ```
 
 2. Pretrain with Swin Transforemr-Base backbone.
 
 ```bash
-OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0,1,2,3,4,5' python pretrain.py --arch swin_b --bs 48 --lr 3e-4 --epoch 30 --data SSL4EO_RGB_MIX --num_patch 16 --tcr 4 --patch_sim 200
+OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0,1,2,3,4,5' python pretrain.py --arch swin_b --bs 48 --lr 3e-4 --epoch 30 --data SSL4EO_RGB_MIX --num_var 16 --tcr 4 --var_sim 200
 ```
 
 ## Fine-tuning
@@ -36,7 +36,7 @@ OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0,1,2,3,4,5' python pretrain.py --arch s
 e.g.,
 ```bash
 cd transfer_classification
-OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0' python finetune.py --arch resnet50 --bs 12 --lr 5e-4 --epoch 100 --data ucm --num_patch 16 --num_sampels 5 --model_path <your pretrained model path>
+OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0' python finetune.py --arch resnet50 --bs 12 --lr 5e-4 --epoch 100 --data ucm --num_var 16 --num_sampels 5 --model_path <your pretrained model path>
 ```
 
 2. Semantic segmentation
