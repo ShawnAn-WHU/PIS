@@ -3,7 +3,7 @@
 This is a code demo for the paper: Pretrain A Remote Sensing Foundation Model by ***P***romoting ***I***ntra-instance ***S***imilarity.
 
 we have realsed our pre-trained PIS models and related materials:
-- [x] PIS-R50-IV16-E30-b128+SP & PIS-SwinB-IV16-E30-B48+SP. See [Baidu Netdisk](https://pan.baidu.com/s/1WUPQCI727LNKusoLJ8Xbuw) [Code: PIS1] & [Google Drive]
+- [x] PIS-R50-IV16-E30-b128+SP & PIS-SwinB-IV16-E30-B48+SP. See [Baidu Netdisk](https://pan.baidu.com/s/1WUPQCI727LNKusoLJ8Xbuw) [Code: PIS1] & [Google Drive](https://drive.google.com/drive/folders/1iFqPzMaCDYoPJPeO7BXio2WO3Xf6WwW7?usp=sharing)
 - [x] Codes for pretraining
 - [ ] Codes for downstream fine-tuning
   - [x] Scene classification
