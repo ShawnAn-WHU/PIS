@@ -3,7 +3,7 @@
 This is a code demo for the paper: Pretrain A Remote Sensing Foundation Model by ***P***romoting ***I***ntra-instance ***S***imilarity.
 
 we have realsed our pre-trained PIS models and related materials:
-- [x] PIS-R50-IV16-E30-b128+SP & PIS-SwinB-IV16-E30-B48+SP
+- [x] PIS-R50-IV16-E30-b128+SP & PIS-SwinB-IV16-E30-B48+SP. See [Baidu Netdisk](https://pan.baidu.com/s/1WUPQCI727LNKusoLJ8Xbuw) [Code: PIS1] & [Google Drive]
 - [x] Codes for pretraining
 - [ ] Codes for downstream fine-tuning
   - [x] Scene classification
@@ -11,7 +11,7 @@ we have realsed our pre-trained PIS models and related materials:
   - [ ] Change detection
      
 ## Dataset
-- Pretraining dataset: the compressed 8-bit RGB-version [SSL4EO-S12](https://mediatum.ub.tum.de/1702379) dataset.
+- Pretraining dataset: the compressed 8-bit RGB-version [SSL4EO-S12](https://mediatum.ub.tum.de/1702379) dataset. The CSV files used for codes of pretraining are available in above netdisk links.
 - Downstream datasets:
   - Scene classification: [UC Merced (UCM)](http://weegee.vision.ucmerced.edu/datasets/landuse.html), [Aerial image dataset (AID)](https://captain-whu.github.io/AID/), [PatternNet](https://sites.google.com/view/zhouwx/dataset), [NWPU-RESISC45 (NR)](https://gcheng-nwpu.github.io/#Datasets) and [EuroSAT (RGB version)](https://github.com/phelber/eurosat).
   - Semantic segmentation: [DLRSD](https://sites.google.com/view/zhouwx/dataset#h.p_hQS2jYeaFpV0), [ISPRS Potsdam](https://www2.isprs.org/commissions/comm2/wg4/benchmark/2d-sem-label-potsdam/), [LoveDA](https://doi.org/10.5281/zenodo.5706578).
