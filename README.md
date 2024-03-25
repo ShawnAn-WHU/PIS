@@ -44,6 +44,7 @@ OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0' python finetune.py --arch resnet50 --
 e.g.,
 ```bash
 cd transfer_segmentation
+OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0' python seg_upernet.py --arch swin_b --bs 8 --lr 2e-4 --epoch 100 --data potsdam --tr 0.01 --model_path <your pretrained model path>
 ```
 
 3. Change detection
@@ -51,4 +52,5 @@ cd transfer_segmentation
 e.g.,
 ```bash
 cd transfer_detection
+python train.py --backbone resnet --dataset cdd --mode pis-r50
 ```
