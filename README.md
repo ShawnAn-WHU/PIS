@@ -5,10 +5,10 @@ This is a code demo for the paper: Pretrain A Remote Sensing Foundation Model by
 we have realsed our pre-trained PIS models and related materials:
 - [x] PIS-R50-IV16-E30-b128+SP & PIS-SwinB-IV16-E30-B48+SP. See [Baidu Netdisk](https://pan.baidu.com/s/1WUPQCI727LNKusoLJ8Xbuw) [Code: PIS1] & [Google Drive](https://drive.google.com/drive/folders/1iFqPzMaCDYoPJPeO7BXio2WO3Xf6WwW7?usp=sharing)
 - [x] Codes for pretraining
-- [ ] Codes for downstream fine-tuning
+- [x] Codes for downstream fine-tuning
   - [x] Scene classification
-  - [ ] Semantic segmentation
-  - [ ] Change detection
+  - [x] Semantic segmentation
+  - [x] Change detection
      
 ## Dataset
 - Pretraining dataset: the compressed 8-bit RGB-version [SSL4EO-S12](https://mediatum.ub.tum.de/1702379) dataset. The CSV files used for codes of pretraining are available in above netdisk links.
