@@ -31,25 +31,19 @@ OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0,1,2,3,4,5' python pretrain.py --arch s
 ```
 
 ## Fine-tuning
-1. Scene classification
-
-e.g.,
+1. Scene classification, e.g.,
 ```bash
 cd transfer_classification
 OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0' python finetune.py --arch resnet50 --bs 12 --lr 5e-4 --epoch 100 --data ucm --num_var 16 --num_sampels 5 --model_path <your pretrained model path>
 ```
 
-2. Semantic segmentation
-
-e.g.,
+2. Semantic segmentation, e.g.,
 ```bash
 cd transfer_segmentation
 OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='0' python seg_upernet.py --arch swin_b --bs 8 --lr 2e-4 --epoch 100 --data potsdam --tr 0.01 --model_path <your pretrained model path>
 ```
 
-3. Change detection
-
-e.g.,
+3. Change detection, e.g.,
 ```bash
 cd transfer_detection
 python train.py --backbone resnet --dataset cdd --mode pis-r50
